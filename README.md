@@ -1,8 +1,14 @@
-# 🐙 Kraken Frontend Test
+# Kraken Frontend Test
+
+
 
 Thanks for taking the time to check out this project, and for the opportunity to work on a flexible and well-scoped assignment.
 
 This README includes a quick overview of what I’ve built, the thinking behind my decisions, and a few notes that might help save time while reviewing the code. I hope it gives you a clear sense of how I approach frontend development in practice.
+
+## 🚀 Live Demo
+
+**[View Live Demo →](https://kraken-frontend-test.vercel.app/)**
 
 
 <img src="https://static.octopuscdn.com/constantine/constantine.svg" alt="Octopus Energy mascot, Constantine" width="100" />
