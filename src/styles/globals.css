@@ -1,0 +1,40 @@
+/* Font declarations - keep in global CSS since MUI can't load fonts */
+@font-face {
+  font-family: 'Chromatophore';
+  src: url('/fonts/Chromatophore1504-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chromatophore';
+  src: url('/fonts/Chromatophore1504-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chromatophore';
+  src: url('/fonts/Chromatophore1504-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
