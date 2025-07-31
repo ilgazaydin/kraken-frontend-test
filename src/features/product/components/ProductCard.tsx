@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import type { Product, ProductListItem } from '../models/product';
 import {
   StyledCard,
@@ -13,7 +14,7 @@ interface ProductCardProps {
   onClick: () => void;
 }
 
-export const ProductCard = ({ product, onClick }: ProductCardProps) => {
+export const ProductCard = memo(({ product, onClick }: ProductCardProps) => {
   return (
     <StyledCard onClick={onClick}>
       <StyledCardMedia component="img" image={product.img_url} alt={product.name} />
@@ -28,4 +29,4 @@ export const ProductCard = ({ product, onClick }: ProductCardProps) => {
       </StyledCardContent>
     </StyledCard>
   );
-};
+});

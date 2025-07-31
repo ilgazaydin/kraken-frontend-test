@@ -6,5 +6,21 @@ const httpLink = createHttpLink({
 
 export const apolloClient = new ApolloClient({
   link: httpLink,
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache({
+    typePolicies: {
+      Product: {
+        keyFields: ['id'],
+      },
+    },
+  }),
+  defaultOptions: {
+    watchQuery: {
+      errorPolicy: 'all',
+      fetchPolicy: 'cache-first',
+    },
+    query: {
+      errorPolicy: 'all',
+      fetchPolicy: 'cache-first',
+    },
+  },
 });

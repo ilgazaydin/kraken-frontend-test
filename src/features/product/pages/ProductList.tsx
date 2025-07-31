@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { useCallback } from 'react';
 import { Typography } from '@mui/material';
 import { useProductsList } from '../hooks/useProducts';
 import { ProductGrid } from '../components/ProductGrid';
@@ -8,9 +9,12 @@ export const ProductList = () => {
   const navigate = useNavigate();
   const { products, loading, error } = useProductsList();
 
-  const handleProductSelect = (productId: number) => {
-    navigate(`/product/${productId}`);
-  };
+  const handleProductSelect = useCallback(
+    (productId: number) => {
+      navigate(`/product/${productId}`);
+    },
+    [navigate],
+  );
 
   if (loading) {
     return (
