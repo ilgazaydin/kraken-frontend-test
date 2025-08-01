@@ -31,7 +31,7 @@ export const muiTheme = createTheme({
     },
     text: {
       primary: '#ffffff',
-      secondary: colors.ice,
+      secondary: '#afafaf',
       disabled: colors.purpleHaze,
     },
   },
@@ -68,14 +68,11 @@ export const muiTheme = createTheme({
       },
     },
     h5: {
-      fontWeight: 700,
-      fontSize: '1.5rem',
-      '@media (max-width:899px)': {
-        fontSize: '1.25rem',
-      },
+      fontWeight: 500,
+      fontSize: '1.75rem',
     },
     h6: {
-      fontWeight: 400,
+      fontWeight: 500,
       fontSize: '1.25rem',
       '@media (max-width:899px)': {
         fontSize: '1.125rem',
@@ -90,6 +87,18 @@ export const muiTheme = createTheme({
   },
 
   components: {
+    MuiContainer: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          paddingLeft: theme.spacing(6),
+          paddingRight: theme.spacing(6),
+          [theme.breakpoints.up('xs')]: {
+            paddingLeft: theme.spacing(6),
+            paddingRight: theme.spacing(6),
+          },
+        }),
+      },
+    },
     MuiCssBaseline: {
       styleOverrides: {
         button: {
@@ -104,6 +113,7 @@ export const muiTheme = createTheme({
         },
       },
     },
+
     MuiToolbar: {
       styleOverrides: {
         root: {

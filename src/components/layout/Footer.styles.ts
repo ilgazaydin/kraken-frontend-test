@@ -8,6 +8,8 @@ export const FooterContainer = styled(Box)(({ theme }) => ({
 })) as typeof Box;
 
 export const FooterText = styled(Typography)(({ theme }) => ({
+  display: 'block',
+  lineHeight: 1.4,
   color: theme.palette.text.secondary,
   fontSize: '0.75rem',
 }));

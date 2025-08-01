@@ -22,10 +22,10 @@ export const QuantityValue = styled(Typography)(() => ({
 }));
 
 export const QuantityButton = styled(Button)(({ theme }) => ({
-  minWidth: '24px',
-  width: '24px',
-  height: '24px',
-  borderRadius: theme.spacing(2),
+  minWidth: '32px',
+  width: '32px',
+  height: '32px',
+  borderRadius: theme.spacing(3),
   backgroundColor: theme.palette.secondary.main,
   color: theme.palette.primary.main,
   fontWeight: 500,
@@ -36,10 +36,5 @@ export const QuantityButton = styled(Button)(({ theme }) => ({
   },
   '&:hover': {
     backgroundColor: theme.palette.secondary.light,
-  },
-  [theme.breakpoints.up('md')]: {
-    minWidth: '32px',
-    width: '32px',
-    height: '32px',
   },
 }));

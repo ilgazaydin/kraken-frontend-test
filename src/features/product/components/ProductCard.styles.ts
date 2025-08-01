@@ -1,7 +1,6 @@
 import { styled } from '@mui/material/styles';
 import { colors } from '@/theme';
-import { Card, CardContent, CardMedia, Typography } from '@mui/material';
-import type { TypographyProps } from '@mui/material';
+import { Card, CardContent, CardMedia } from '@mui/material';
 
 export const StyledCard = styled(Card)(({ theme }) => ({
   cursor: 'pointer',
@@ -21,32 +20,17 @@ export const StyledCardMedia = styled(CardMedia)<{
   image?: string;
   alt?: string;
 }>(({ theme }) => ({
-  height: 280,
+  height: 200,
   objectFit: 'contain',
   backgroundColor: '#f2f2f2',
-  padding: theme.spacing(8),
+  padding: theme.spacing(4),
 }));
 
 export const StyledCardContent = styled(CardContent)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main, // purpleHaze
   color: theme.palette.text.primary,
-}));
-
-export const ProductTitle = styled(Typography)<TypographyProps>(({ theme }) => ({
-  fontSize: '1.25rem',
-  fontWeight: 700,
-  lineHeight: 1.3,
-  color: theme.palette.text.primary,
-}));
-
-export const ProductDescription = styled(Typography)<TypographyProps>(({ theme }) => ({
-  color: theme.palette.text.secondary,
-  marginBottom: theme.spacing(1),
-}));
-
-export const ProductPrice = styled(Typography)(({ theme }) => ({
-  fontSize: '1.4rem',
-  fontWeight: 700,
-  color: theme.palette.text.primary,
-  marginTop: theme.spacing(2),
+  padding: theme.spacing(2),
+  '&:last-child': {
+    paddingBottom: theme.spacing(2),
+  },
 }));

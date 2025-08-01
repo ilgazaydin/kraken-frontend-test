@@ -19,7 +19,7 @@ export const StyledImageCard = styled(Card, {
   shouldForwardProp: (prop) => prop !== 'sizeConfig',
 })<{ sizeConfig: SizeConfig }>(({ theme, sizeConfig }) => ({
   backgroundColor: '#f2f2f2',
-  borderRadius: theme.spacing(2),
+  borderRadius: theme.spacing(4),
   padding: theme.spacing(2),
   display: 'flex',
   justifyContent: 'center',

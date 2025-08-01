@@ -11,8 +11,11 @@ export const StyledToolbar = styled(Toolbar)(() => ({
   alignItems: 'center',
 }));
 
-export const LogoImage = styled('img')(() => ({
-  height: '32px',
+export const LogoImage = styled('img')(({ theme }) => ({
+  height: '24px',
+  [theme.breakpoints.up('md')]: {
+    height: '32px',
+  },
 }));
 
 export const BasketButton = styled(IconButton)(({ theme }) => ({

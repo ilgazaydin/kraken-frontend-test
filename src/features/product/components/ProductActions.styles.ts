@@ -11,11 +11,11 @@ export const PriceQuantityBox = styled(Box)(({ theme }) => ({
 }));
 
 export const AddToCartButton = styled(Button)(({ theme }) => ({
-  paddingTop: theme.spacing(2),
-  paddingBottom: theme.spacing(2),
+  paddingTop: theme.spacing(3),
+  paddingBottom: theme.spacing(3),
   fontSize: '1rem',
   fontWeight: 600,
   textTransform: 'none',
-  borderRadius: theme.spacing(1),
+  borderRadius: theme.spacing(3),
   color: 'primary',
 }));

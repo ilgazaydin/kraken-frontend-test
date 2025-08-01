@@ -9,7 +9,7 @@ export const ProductInfo = ({ product }: ProductInfoProps) => {
   return (
     <>
       <ProductTitle variant="h2">{product.name}</ProductTitle>
-      <ProductSubtitle variant="body2" color="text.secondary">
+      <ProductSubtitle variant="body1" color="text.secondary">
         {product.power} // Packet of {product.quantity}
       </ProductSubtitle>
     </>
