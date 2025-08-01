@@ -14,10 +14,10 @@ export const DescriptionBox = styled(Box)(({ theme }) => ({
   paddingRight: 0,
   [theme.breakpoints.down('md')]: {
     backgroundColor: colors.hemocyanin,
-    marginLeft: theme.spacing(-4),
-    marginRight: theme.spacing(-4),
-    paddingLeft: theme.spacing(4),
-    paddingRight: theme.spacing(4),
+    marginLeft: theme.spacing(-6),
+    marginRight: theme.spacing(-6),
+    paddingLeft: theme.spacing(6),
+    paddingRight: theme.spacing(6),
   },
 }));
 
